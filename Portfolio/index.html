@@ -20,6 +20,9 @@
                    <a href="#projects">Projects</a>
                    <a href="#skills">Skills</a>
                    <a href="contactme">Contact Me</a>
+                  <div  onclick="change()"   class="dark-theme">
+                    <i class="fa fa-moon-o" aria-hidden="true"></i>
+                  </div>
                 </div>
             </div>
              <!-- hero section -->
@@ -253,14 +256,14 @@
     </div>
 
      <!-- Contact Us -->
-  <div id="contactme" class="contactus-container">
-    <div class="container">
+  <div  id="contactme" class="contactus-container">
+    <div  class="container">
       <h1 class="contactus-heading">Contact Me</h1>
       <h3 class="contactus-sub-heading">
         Questions, thoughts, or just want to say hello?
       </h3>
 
-      <div class="contactus-form-container">
+      <div  class="contactus-form-container">
         <form class="form" action="https://formspree.io/f/mlekrnnl" method="post">
           <div class="formfield-container">
             <input class="formfield" type="text" name="name" id="" placeholder="Enter your name" />
@@ -313,6 +316,8 @@
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
   <script>
+
+
     var typeData = new Typed(".role", {
       strings: [
         "Full Stack Developer",
@@ -325,6 +330,22 @@
       backSpeed: 80,
       backDelay: 1000,
     });
+
+  
+    const darkmode = document.body;
+    const project = document.querySelector(".project-section");
+    const contact = document.getElementsByClassName("contactus-container")
+
+function change() {
+   darkmode.classList.toggle('dark-mode');
+   project.classList.toggle('dark-mode');
+   contact.classList.toggle('dark-mode');
+
+}
+
+
+
+    
   </script>
 </body>
 </html>
