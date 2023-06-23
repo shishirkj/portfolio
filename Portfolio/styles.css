@@ -13,6 +13,8 @@
 :root{
     --bgOrange:#e84949;
     overflow-x: hidden;
+    --primary:rgb(255, 255, 255);
+    --secondory:#292929;
 }
 
 .container
@@ -28,6 +30,20 @@
     padding-top: 1rem;
 }
 
+.dark-theme
+{ 
+   padding-left: 1rem;
+    cursor: pointer;
+    font-size: 25px;   
+}
+
+
+.dark-mode {
+    background-color: rgba(189, 195, 199);
+ }
+
+
+ 
 .image
 {
     width: 76px;
@@ -365,7 +381,7 @@ font-weight: 500;
     box-shadow: 0px 0px 40px #1f1f1f;
 }
 
-project-card::after
+project-card
 {
     content: "";
     color: black;
@@ -384,12 +400,7 @@ project-card::after
         content: "";
         color: #fff;
         position: absolute;
-        background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
         z-index: 1;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
         transform: scaleX(0);
         transform-origin: left;
         transition: all 0.4s;
@@ -399,8 +410,11 @@ project-card::after
     .project-card:hover::before  
     {
         transform: scaleX(1);
-      
-
+        background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 
     .project-number
@@ -610,6 +624,7 @@ cursor: pointer;
 
 }
 
+
 .skills-container 
 {
     position: relative;
@@ -715,8 +730,10 @@ cursor: pointer;
 /* contact us */
 .contactus-container {
     width: 100%;
-    background-color: rgb(231, 231, 231);
-}
+    background-color: rgba(189, 195, 199);
+ }
+    
+
 
 .container {
     max-width: 1200px;
